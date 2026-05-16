@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meenish Restaurant</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f8f4f0;
+                color: #333;
+                text-align: center;
+            }
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 24px;
+            }
+            img {
+                display: block;
+                margin: 0 auto 24px;
+                width: 100%;
+                max-width: 600px;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 24px auto;
+            }
+            th, td {
+                border: 1px solid #888;
+                padding: 12px 16px;
+            }
+            th {
+                background-color: #e5c6a5;
+            }
+            ul {
+                list-style: disc;
+                text-align: left;
+                display: inline-block;
+                margin: 0 auto 24px;
+                padding-left: 20px;
+            }
+            form {
+                text-align: left;
+                max-width: 520px;
+                margin: 0 auto 40px;
+                background: #fff;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            }
+            label {
+                display: block;
+                margin-bottom: 6px;
+                font-weight: 600;
+            }
+            input, textarea, select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 16px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 1rem;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                width: auto;
+                background-color: #4a7c59;
+                color: #fff;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+            details {
+                max-width: 700px;
+                margin: 0 auto 24px;
+                text-align: left;
+            }
+            h1, h2 {
+                margin-top: 24px;
+                margin-bottom: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Meenish Restaurant</h1>
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" alt="Restaurant Image">
+        <p>Welcome to Meenish Restaurant, where we serve delicious and authentic cuisine.<br> Our menu features a variety of dishes made with fresh ingredients and traditional recipes. <br>Whether you're in the mood for a hearty meal or a light snack, we have something for everyone.<br> Come dine with us and experience the flavors of our kitchen!</p>
+        <h2>Menu</h2>
+        <ul>
+            <li>Chicken Tikka</li>
+            <li>Paneer Butter Masala</li>
+            <li>Naan</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Dish</th>
+                <th>Price</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Chicken Tikka</td>
+                <td>500 RUP</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>Paneer Butter Masala</td>
+                <td>600 RUP</td>
+                <td>4.7</td>
+            </tr>
+            <tr>
+                <td>Naan</td>
+                <td>50 RUP</td>
+                <td>4.3</td>
+            </tr>
+        </table>
+        <h2>Special Offers</h2>
+        <p>Enjoy our special offers and discounts!</p>
+        <p>Get 20% off on all orders above 1000 RUP. Use code: MEENISH20 at checkout.</p>
+        <h2>Opening Hours</h2>
+        <p>Monday to Friday: 10:00 AM - 10:00 PM<br>Saturday and Sunday: 10:00AM - 11:30PM</p>
+        <h2>Contact Us</h2>
+        <details>
+            <summary>Contact Information</summary>
+            <p>Phone Number : +91 123456789<br>Email : meenish.2007@gmail.com</p>
+        </details>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" required><br><br>
+            <label for="rating">Your Rating:</label><br>
+            <select id="rating" name="rating" required>
+                <option value="">Select a rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Average</option>
+                <option value="2">2 - Poor</option>
+                <option value="1">1 - Very Poor</option>
+            </select><br><br>
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+
+
+        </form>
+    </body>
+</html>
